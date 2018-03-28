@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<!-- jq.js 파일을 다운받아서 local에 설치하고 local에 있는 파일을 불러 오는 방법
+인터넷이 연결되지 않은 한경에서 test 용으로 한정 -->
+<script>
+// js 영역
+$(document).ready(function(){
+	// jq 영역
+	
+	// click event가 발생했을때 호출될 함수를 p_click 이라고 선언을 하고
+	// click()에서 p_click 을 호출해서 사용하는 것이 일반적인 코드인데
+	// js의 Lamda, callback 기법에서는 함수를 별도로 선언하지 않고
+	// click() 내부에 이름 없이 직접 선언해서 사용한다.
+	$("p").click(function(){
+		$(this).text("대한민국");
+	})
+	
+	function p_click() {
+		$(this).text("우리나라")
+	}
+	$("p").click( p_click() )
+	
+	
+	
+		
+})
+/*
+ * js 영역 
+ 
+ */
+</script>
+</head>
+<body>
+<header>
+	<h2>JQuery 연습</h2>
+</header>
+
+<article>
+	<p>본문1</p>
+	<p>본문2</p>
+	<p>본문3</p>
+</article>
+</body>
+</html>

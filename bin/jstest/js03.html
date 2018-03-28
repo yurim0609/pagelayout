@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	.p1 {
+		border:1px solid #0f0;
+		width:30%;
+		
+	}
+	.p2 {
+		border:1px solid #f00;
+		width:30%;
+		display:inline-block; /*html5에서 grid 효과를 주는 속성*/
+	}
+	#art1 {
+		border:1px solid #00f;
+	}
+
+</style>
+<script>
+function art_click() {
+	// 본문에 있는 tag중에서 p tag들을 모아서 변수로 만들어라.
+	// tag들 = 배열
+	var pTags = document.getElementsByTagName("p");
+	for(let i=0; i<pTags.length; i++){
+		pTags[i].innerHTML = "Korea";
+	}
+}
+
+function p1_click(){
+	var p1Classes = document.getElementsByClassName("p1");
+	for(let i=0; i<p1Classes.length; i++){
+		p1Classes[i].innerHTML = (i+1)*100;
+	}
+	
+}
+
+function p2_click() {
+	var intNum = 3+4; // intNum 변수에 3+4 값을 저장
+	
+	//p21 id를 찾아서 내용을 intNum변수 값으로 변경
+	document.getElementById("p21").innerHTML=intNum;
+	
+}
+</script>
+</head>
+<body>
+<header>
+	<h3>Java Script Test</h3>
+</header>
+<article id="art1" onclick="art_click()"> 
+	<p class="p1" onclick="p1_click()">p1</p>
+	<p class="p1">p11</p>
+	<p class="p1">p12</p>
+	<p class="p1">p13</p>
+	<p class="p1">p14</p>
+</article>
+
+<article id="art2" >
+	<p id="p21" class="p2" onclick="p2_click()">본문2</p>
+	<p class="p2" onclick="p1_click()">클릭본문2</p>
+	<p class="p2">본문2</p>
+	<p class="p2">본문2</p>
+	<p class="p2">본문2</p>
+</article>
+
+</body>
+</html>

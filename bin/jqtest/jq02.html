@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- CDN(Contents Delivery Network)에서 불러오기 설정
+반드시 인터넷이 연결된 상황에서만 가능 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+	p {
+		cursor:auto;
+		border:1px soild #f00;
+	}
+	.pTag {
+		border:1px solid #00f;
+	}
+</style>
+<script>
+/*$(document).ready(function(){
+	
+})*/
+
+$(document).ready(()=>{ // 무명(익명)함수는 화살표 함수로 표현 가능
+	//p 태그 중에 어떤 것이 클릭 되면
+	$("p").click(function(){
+		$(this).text("클릭되었습니다.") // this = 클릭된 p
+	})
+	
+	$(".pTag").click(function() {
+		$(this).text("class 선택") // this = 클릭된 pTag
+	})
+	
+	// 태그변경 html 메소드
+	$("#p2").click(function() {
+		$(this).html("<h2>대한민국</h2>") // this = 클릭된 p2
+	})
+	
+	$("#p3").click(function() {
+		$(this).css("background","#ddd")
+	})
+	
+	
+			
+})
+
+</script>
+</head>
+<body>
+<header>
+	<h2>JQuery 연습</h2>
+</header>
+
+<article>
+	<p id="p1" class="pTag">본문1</p>
+	<p id="p2" class="pTag">본문2</p>
+	<p id="p3" class="pTag">본문3</p>
+	<p id="p4" class="pTag">본문4</p>
+	<p id="p5" class="pTag">본문5</p>
+	<p id="p6" class="pTag">본문6</p>
+	<p id="p7" class="pTag">본문7</p>
+</article>
+</body>
+</html>

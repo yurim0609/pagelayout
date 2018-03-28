@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<header>
+	<h3>Java Script Test</h3>
+</header>
+
+<script>
+// 자바스크립트를 사용하는 영역
+/*이것도 주석*/
+
+//function 함수명 (){ }: JS에서 함수, method를 만드는 키워드
+/*
+ 	java
+ 		public void test(){ }
+ 
+ 	함수로 선언된 부분
+ 	- 함수로 선언된 부분은 페이지가 load, 완성되어도 자동으로 실행 되지 않는다.
+ 	반드시 외부에서 누군가가 호출해주어야 한다.
+ 	- 함수는 호출하는 곳보다 먼저 선언되어야 한다. 
+ */
+function start(){
+	document.write(20+30);
+	document.write(30-10);
+	document.write(30/10);
+	document.write("대한민국");
+	document.write("우리나라"+"대한민국");
+}
+
+</script>
+
+<article>
+	<!-- 마우스 왼쪽버튼으로 클릭을 하면 start()라는 함수를 실행하겠다 라고 선언 -->
+	<p onclick="start()">나를 클릭하세요.</p>
+</article>
+
+</body>
+</html>

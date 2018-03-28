@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+	p {
+		cursor:auto;
+		border:1px soild #f00;
+	}
+	.pTag {
+		border:1px solid #00f;
+	}
+</style>
+<script>
+/*$(document).ready(()=>{
+	
+	$("#p1").click(function(){
+		$(this).attr("background-color","#aaa")
+	})
+})*/
+
+$(document).ready(function(){
+    $("#p1").click(function(){
+        $(this).css("background", "#aaa");
+    });
+});
+
+</script>
+</head>
+<body>
+<header>
+	<h2>JQuery 연습</h2>
+</header>
+
+<article>
+	<p id="p1">본문1</p>
+	<p id="p2">본문2</p>
+	<p id="p3">본문3</p>
+	<p id="p4">본문4</p>
+	<p id="p5">본문5</p>
+</article>
+</body>
+</html>
