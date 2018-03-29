@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	 header,footer{
+	 	color:#fff;
+	 	background:#BDBDBD;
+	 	text-align:center; /*글자를 가운데 정렬*/
+	 	padding:1em; /*본문(글자,문장)과 box간의 여백*/
+	 	
+	 }
+	 
+	 nav {
+	 	padding:1em;
+	 	/*border:1px solid #f00;*/ 
+	 	max-width:160px; /*브라우저 폭이 변했을 경우에 최대 폭을 제한한다.*/
+	 	float:left;
+	 	
+	 }
+	 article{
+	 	margin-left:170px;
+	 	border: 1px solid #848484;
+	 	padding:1em;
+	 	
+	 	
+	 }
+	 
+	 nav p a { /* nav box 내의 p tag 가 있고, 그 내부에 있는 a tag에만 적용 */
+	 	text-decoration:none;
+	 }
+	 
+ 	 .nav_a { /* nav_a 라는 모든 클래스의 tag에 적용 */
+	 	text-decoration:none;
+	 	
+	 }
+</style>
+</head>
+<body>
+<header>
+	<h1>나의 홈페이지</h1>
+</header>
+<!-- navigation : 사이드 메뉴 표현 box  -->
+
+<nav>
+	<p><a href="#" class="nav_a">메인페이지</a></p>
+	<p><a href="#" class="nav_a">노트페이지</a></p>
+	<p><a href="#" class="nav_a">사진페이지</a></p>
+</nav>
+
+<article>
+	<h3>대한민국</h3>
+	<p>나는 자랑스러운 태극기 앞에 조국과 민족의 무궁한</p>
+</article>
+
+
+<footer>
+	<address>CopyRgiht &copy; iy4653iy@naver.com</address>
+</footer>
+
+</body>
+</html>
